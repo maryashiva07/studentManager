@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hello, World!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <h1>Student Manager</h1>
+      <p id="count">Total Student : 0</p>
+
+      <form id="studentForm">
+        <input type="text" id="name" name="name" placeholder="Student Name" required>
+        <input type="text" id="mobile" name="mobile" placeholder="Mobile Number" required>
+        <input type="text" id="address" name="address" placeholder="Address" required>
+
+        <button>Add Student</button>
+
+      </form>
+    </div>
+
+    <div class="student-list">
+      <h2>All Student</h2>
+
+      <div id="students"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
